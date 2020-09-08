@@ -1,6 +1,7 @@
 resource "aws_iam_role" "kentik_role" {
   name        = "${var.iam_role_prefix}TerraformIngestRole"
   description = "This role allows Kentik to ingest the VPC flow logs."
+  force_detach_policies = true
   tags        = {
     Provisioner = "Terraform"
   }
