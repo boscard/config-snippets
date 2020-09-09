@@ -4,7 +4,7 @@ name: aws-terraform
 # to the AWS/terraform directory
 on:
   push:
-    #paths: 'AWS/terraform/**'
+    paths: 'AWS/terraform/**'
     branches: [ master ]
   pull_request:
     branches: [ master ]
