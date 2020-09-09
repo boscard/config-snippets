@@ -8,11 +8,6 @@ variable "vpc_id_list" {
   type        = list(string)
 }
 
-variable "region" {
-  description = "Region to use"
-  type        = string
-}
-
 variable "s3_bucket_prefix" {
   description = "Prefix to use with s3 bucket name"
   type        = string

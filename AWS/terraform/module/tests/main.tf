@@ -35,7 +35,6 @@ module "single_vpc_integration" {
   source            = "../"
   vpc_id_list       = [aws_vpc.test-vpc.0.id]
   rw_s3_access      = true
-  region            = "us-east-1"
   s3_bucket_prefix  = "single"
 }
 
@@ -44,6 +43,5 @@ module "multi_vpc_integration" {
   source            = "../"
   vpc_id_list       = [aws_vpc.test-vpc.1.id, aws_vpc.test-vpc.2.id]
   rw_s3_access      = true
-  region            = "us-east-1"
   s3_bucket_prefix  = "multi"
 }

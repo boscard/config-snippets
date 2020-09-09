@@ -10,7 +10,6 @@ provider "aws" {
 module "kentik_aws_integration" {
   source = "../../"
 
-  region = "us-east-1"
   rw_s3_access = true
-  vpc_id_list = ["vpc-0832cd75"]
+  vpc_id_list = [var.vpc_id]
 }
